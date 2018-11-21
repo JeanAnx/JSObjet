@@ -46,7 +46,8 @@ for ( let i = 1 ; i <= 5 ; i++ ) {
     baliseImg.setAttribute('alt',"Image" + i);
     baliseImg.style.opacity = "0.6";
     baliseImg.style.height = "200px";
-    baliseImg.style.padding = "20px";
+    baliseImg.style.margin = "20px";
+    baliseImg.style.boxShadow = '2px 2px 8px grey';
     baliseImg.style.transition = "all 0.2s ease";
     divGalerie.appendChild(baliseImg);
     baliseImg.addEventListener('mouseover',function(){
@@ -69,6 +70,8 @@ divDisplay.appendChild(imgDisplay);
 var imgList = document.querySelectorAll('.pic');
 console.log(imgList);
 
+
+// Et je crée une boucle pour ajouter l'event à chacune
 for (let img of imgList) {
     img.addEventListener('click',function(){
         var imgSrc = img.getAttribute('src');
@@ -76,20 +79,8 @@ for (let img of imgList) {
         imgDisplay.setAttribute('src',imgSrc);
         imgDisplay.style.width = "215px";
         console.log(imgDisplay);
+        
     });
 
 }
-
-// document.addEventListener('mousemove',function(event){
-    
-//     var mouseX = event.clientX;
-//     var mouseY = event.clientY;
-//     console.log(mouseX + " " + mouseY);
-// })
-
-
-
-
-
-
 

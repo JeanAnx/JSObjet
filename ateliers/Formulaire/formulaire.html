@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="formulaire.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <title>Vérification de formulaire via JS</title>
+</head>
+<body>
+
+    <h1>Formulaire de contact</h1>
+
+    <form action="">
+
+        <label for="fname">Votre prénom :</label>
+        <input id="fname" type="text" name="fname" placeholder="Jean">
+
+        <label for="lname">Votre nom :</label>
+        <input id="lname" type="text" name="lname" placeholder="Annaix">
+
+        <label for="email">Votre email :</label>
+        <input id="email" type="email" name="email" placeholder="jean.annaix@gmail.com">
+
+        <label for="message">Votre message : (500 car. max)</label>
+        <textarea id="message" name="message" id="" cols="30" rows="10">J'me présente, je m'appelle Henri</textarea>
+
+        <input id="boutonFormulaire" type="button" value="Valider">
+
+    </form>
+
+    <div id="display">
+
+    </div>
+    
+    <script src="formulaire.js"></script>
+
+</body>
+</html>
