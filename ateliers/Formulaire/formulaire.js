@@ -32,17 +32,13 @@ function clearBG(element) {
 
 function checkIfEmpty(input) {
     if (input.value == "") {
-
         console.log("on blur");
         console.log('champ vide');
         changeBG(input);
         return false;
-
         } else {
-
             clearBG(input);
-            return true;
-            
+            return true;     
     }
 }
 
@@ -119,8 +115,6 @@ function checkNames(input) {
 }
 
 
-
-
 // LES ÉVÈNEMENTS ET LES BOUCLES **************************************
 
     // Je crée un objet et son constructeur
@@ -166,11 +160,6 @@ function user (fname,lname,email,message) {
     }
 }
 
-/*************************************************************************
- * ************************************************************************
- * **************************************************************************
- */
-
 for (let theInput of inputList) {
     theInput.addEventListener('blur',function(){
         if (checkIfEmpty(theInput)) {
@@ -195,11 +184,6 @@ inputMessage.addEventListener('blur',function(){
     checkMessage(this);
 });
 
-/*************************************************************************
- * *****************************************
- * ******************************
- */
-
 button.addEventListener('click',function(){
 
     if (checkNames(inputFirstName) && checkNames(inputName) && checkMail(inputEmail) && checkMessage(inputMessage)) {
@@ -208,7 +192,7 @@ button.addEventListener('click',function(){
 
     // JE RÉCUPÈRE LES VALEURS DES INPUTS
 
-    console.log(inputFirstName.value);
+        console.log(inputFirstName.value);
         console.log(inputName.value);
         console.log(inputEmail.value);
         console.log(inputMessage.value);
@@ -220,19 +204,15 @@ button.addEventListener('click',function(){
 
     // Je crée un nouvel objet user 
 
-    var thisUser = new user(firstName,lastName,userEmail,userMessage);
-    console.log(thisUser);
-    thisUser.display();
-
-    } else {
-
-        errorMessage.setAttribute('class','warning');
-        errorMessage.innerHTML = "Veuillez remplir tous les champs du formulaire";
-        warningDiv.appendChild(errorMessage);
-}
-
+        var thisUser = new user(firstName,lastName,userEmail,userMessage);
+        console.log(thisUser);
+        thisUser.display();
+            } else {
+                errorMessage.setAttribute('class','warning');
+                errorMessage.innerHTML = "Veuillez remplir tous les champs du formulaire";
+                warningDiv.appendChild(errorMessage);
+    }
 });
-
 
 function checkForm() {
     
@@ -241,5 +221,4 @@ function checkForm() {
     } else {
         return false;
     } 
-
 }

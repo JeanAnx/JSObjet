@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 , h2 , h3 , h4 {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    color: #FDDD0B;
+    text-shadow: 2px 2px 2px grey;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4.5rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
