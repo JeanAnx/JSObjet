@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 body {
@@ -16,14 +17,28 @@ h1 , h2 , h3 , h4 {
 }
 h1 {
     font-size: 6rem;
+    margin-bottom: 0;;
 }
 h2 {
     font-size: 4.5rem;
 }
 h3 {
+    margin-top: 0;
     font-size: 3rem;
 }
 
 p {
     font-size: 1.5rem;
+}
+
+.dropZone {
+    border: 0.5px solid gainsboro;
+    width: 80%;
+    height: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+img {
+    height: 100%;
 }
